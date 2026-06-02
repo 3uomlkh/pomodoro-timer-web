@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #eaeaea;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  color: #e94560;
+  transition: color 0.4s;
+}
+
+.mode-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e94560;
+  transition: color 0.4s;
+}
+
+.timer {
+  background-color: #16213e;
+  border: 4px solid #e94560;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.4s;
+}
+
+.time {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.progress {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.count-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.count-selector label {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.count-selector input {
+  background-color: #16213e;
+  border: 2px solid #0f3460;
+  border-radius: 8px;
+  color: #eaeaea;
+  font-size: 1rem;
+  padding: 6px 0;
+  width: 80px;
+  text-align: center;
+  outline: none;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s, background-color 0.4s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-start {
+  background-color: #e94560;
+  color: #fff;
+  transition: background-color 0.4s;
+}
+
+.btn-stop {
+  background-color: #0f3460;
+  color: #eaeaea;
+}
+
+.btn-reset {
+  background-color: #0f3460;
+  color: #eaeaea;
+}
+
+.btn-settings {
+  background-color: transparent;
+  color: #aaa;
+  border: 1px solid #aaa;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+}
+
+.btn-settings:hover {
+  color: #eaeaea;
+  border-color: #eaeaea;
+}
+
+/* Break mode */
+.container.break-mode h1 {
+  color: #2ecc71;
+}
+
+.container.break-mode .mode-label {
+  color: #2ecc71;
+}
+
+.container.break-mode .timer {
+  border-color: #2ecc71;
+}
+
+.container.break-mode .btn-start {
+  background-color: #27ae60;
+}

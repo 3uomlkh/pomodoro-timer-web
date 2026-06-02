@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #eaeaea;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  background-color: #16213e;
+  padding: 48px 56px;
+  border-radius: 16px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  color: #e94560;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+input[type="number"] {
+  background-color: #1a1a2e;
+  border: 2px solid #0f3460;
+  border-radius: 8px;
+  color: #eaeaea;
+  font-size: 1.2rem;
+  padding: 10px 14px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #e94560;
+}
+
+.btn-save {
+  background-color: #e94560;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+
+.btn-save:hover {
+  opacity: 0.85;
+}
